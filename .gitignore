@@ -1,0 +1,21 @@
+# Created by gleenomax on 070425
+# Modified 070725
+
+# Ignore macOS shortcut files (symlinks, links, etc.)
+*.symlink
+*.link
+*.url
+
+# Ignore Vim temp swap files
+*.swp
+*.swo
+*.*~
+
+# Ignore gcc a.out compiled files
+a.out
+
+# Ignore the .DS_Store and other system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
