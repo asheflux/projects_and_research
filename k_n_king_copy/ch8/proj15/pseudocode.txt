@@ -1,0 +1,8 @@
+    //1 - Receive a message from the user and store it into an array.
+        
+    //2 - Receive an integer to represent the amount that the letters will be shifted
+    
+    //3 - Encrypt the message.  Shift the letters to encrypt the message, then print the 'shifted' message.
+    //  - each letter in the message is shifted numerically by the 'shift' amount, and translated to it's corresponding char.
+    //  - this shift should work for both lowercase and uppercase letters.
+   

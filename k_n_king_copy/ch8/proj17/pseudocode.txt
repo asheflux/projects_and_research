@@ -1,0 +1,17 @@
+// 1 - Receive the size of the matrix from the user. 
+
+// 2 - create an int matrix using the size provided by the user and initialize it to all 0.
+
+// 3 - start by placing '1' in the middle of the first row.
+
+// 4 - loop through the matrix, placing the next 'i' at row+1, col+1, and adjusting for the edges
+//     - determine the next row and col
+//     - validate: if value at this position is 0, store the next 'i'.  
+//       -- First try diagonal up/right, otherwise try straight down.  
+//       -- If both are blocked with non-zero values, then end the loop.
+//     - collision occurs when the position doesn't contain 0.  
+//       -- rewind to previous position, and try going down one; if collision again, then break.
+// 5 - There seems to be one position that still has a 0.  Find it and place the final size*size in it.  
+//     - Make sure it was the only 0 remaining.
+
+// 6 - print the matrix

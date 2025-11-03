@@ -1,0 +1,10 @@
+//1  - create an integer array called "alphabet" that has 26 values initialized to 0, each value represents how many times the corresponding letter has appeared in our analysis of the user's input.
+
+//2 - receive a first word from the user, using the 'while' pattern.
+//  - look at each letter of the word.
+//  - if the letter is an 'alpha', meaning it's either an uppercase or lowercase letter, then convert the number to it's numerical index for the alphabet array, and increment the value at that index.  Eg, to increment 'A', you would convert 'A' to 0 by using c - 'A'.  Then, access alphabet[0] and incrememnt it: alphabet[0] = alphabet[0] + 1
+
+//3 - receive a second word from the user.
+//  - Each time you read a letter, you will decrement the value at that corresponing index in the alphabet array.  If the words are anagrams, then the alphabet array should end up back in its original state: all 0.  However, if you ever encounter a negative number, then the words are not anagrams.
+
+//4 - report the result to the user.
