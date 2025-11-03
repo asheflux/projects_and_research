@@ -1,0 +1,41 @@
+#navbar-section li:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+.dropdown-menu li:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    background-color: rgb(251, 143, 177) !important;
+}
+
+
+@media (max-width: 767px) {
+    #mobile-background {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    #main-section {
+        background-image: url('./img/mobile-main.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: right 45% bottom 70%;
+    }
+
+    #salon-title {
+        color: #ffffff !important;
+    }
+
+    #our-hairstyles {
+        color: #303030 !important;
+    }
+
+    #contact-info, p {
+        text-align: center;
+        color: #ffffff !important;
+    }
+
+    form p {
+        text-align: start;
+    }
+  }

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <section id="navbar-section" class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-0 col-sm-12">
+        <div
+          class="container-fluid py-2 ps-1"
+          style="background-color: rgb(251, 143, 177); padding-right: 66px"
+        >
+          <button
+            class="navbar-toggler navbar-dark border-3 rounded-5"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon p-4 navbar-dark"></span>
+          </button>
+          <a
+            class="navbar-brand text-white"
+            style="
+              font-family: cursive;
+              font-size: 2rem;
+              font-weight: bolder;
+              margin: auto;
+            "
+            href="#"
+            >Salon</a
+          >
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ms-lg-4 me-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-2">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="#main-section"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item ms-2 d-block d-sm-none">
+                <a class="nav-link text-white" href="#mobile-background"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item dropdown ms-2 pr-0 d-none d-sm-block">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#services-section"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-white"
+                      href="#services-section"
+                      style="background-color: rgb(251, 143, 177)"
+                      >Women</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white"
+                      href="#men-section"
+                      style="background-color: rgb(251, 143, 177)"
+                      >Men</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-white" href="#contact-section">Map</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-white ms-lg-4 me-auto" href="#">
+                  <em>Phone: 123456789</em></a
+                >
+              </li>
+            </ul>
+            <ul class="nav me-lg-5">
+              <li class="ms-2">
+                <a
+                  class="text-body-secondary"
+                  href="https://www.twitter.com"
+                  target="”_blank”"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="white"
+                    class="bi bi-twitter"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                    />
+                  </svg>
+                  <use xlink:href="#twitter"></use
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="https://www.instagram.com"
+                  target="”_blank”"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="white"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    />
+                  </svg>
+                  <use xlink:href="#instagram"></use
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="https://www.facebook.com"
+                  target="”_blank”"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="white"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    />
+                  </svg>
+                  <use xlink:href="#facebook"></use
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Main -->
+    <section id="main-section" style="background-image: url('./img/main.jpg')">
+      <div id="mobile-background">
+        <div class="container col-xxl-8 px-4 pt-5 mt-3">
+          <div
+            class="row col-lg-12 flex-lg-row-reverse align-items-center g-5 py-5 justify-content-between"
+          >
+            <form
+              class="col-10 col-sm-8 col-lg-5 border border-2 rounded-0 py-5 d-none d-sm-none d-md-none d-lg-block mt-5"
+              style="
+                background-color: rgba(255, 255, 255, 0.5);
+                border-color: rgb(251, 143, 177) !important;
+              "
+            >
+              <div class="form-floating my-3">
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  id="floatingInput"
+                  placeholder="Email: name@example.com"
+                />
+                <label for="floatingInput">Email: name@example.com</label>
+              </div>
+              <div class="form-floating my-3">
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  id="floatingInput"
+                  placeholder="Re-Type: name@example.com"
+                />
+                <label for="floatingInput">Re-Type name@example.com</label>
+              </div>
+              <div class="form-floating my-3">
+                <textarea
+                  class="form-control rounded-0"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"
+                  style="resize: none"
+                ></textarea>
+                <label for="floatingTextarea">Comments</label>
+              </div>
+              <button
+                class="send w-100 btn btn-lg mb-3 rounded-0 text-white"
+                type="submit"
+                style="
+                  background-color: rgb(251, 143, 177);
+                  font-weight: bolder;
+                "
+              >
+                Send
+              </button>
+            </form>
+            <div
+              id="overlay"
+              class="col-lg-6 col-sm-12 mt-5 text-lg-start text-center"
+            >
+              <h1
+                id="salon-title"
+                class="display-5 text-body-emphasis lh-1 mb-3"
+                style="color: #303030"
+              >
+                Salon Project - Sample Website
+              </h1>
+              <p class="js-test" style="color: #303030">
+                We carry out every haircut with great care and attention to
+                detail: long and short haircuts, light and airy perms, as well
+                as bold, strong curls. Whether gentle tints or cheerful, shiny
+                colorations:
+              </p>
+              <p class="">
+                We have what is right for you. If you are struggling with unruly
+                and rebellious hair, our Relax program will ensure that your
+                styling fits perfectly. And if you want to set accents with
+                brilliant strands - you've come to the right place with us. For
+                special occasions we will enchant you with elaborate updos.
+              </p>
+              <div
+                class="d-grid gap-2 d-md-flex justify-content-md-start d-none d-lg-block d-md-none pt-3"
+              >
+                <button
+                  type="button"
+                  class="btn btn-lg px-4 me-2 rounded-0 border-3"
+                  style="
+                    background: rgb(255, 255, 255, 0.3);
+                    border-color: rgb(251, 143, 177);
+                  "
+                >
+                  Women
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-lg px-4 rounded-0 border-3"
+                  style="
+                    background: rgb(255, 255, 255, 0.3);
+                    border-color: rgb(251, 143, 177);
+                  "
+                >
+                  Men
+                </button>
+              </div>
+              <div
+                class="d-grid gap-2 d-md-flex justify-content-md-start d-block d-lg-none d-md-block pt-3"
+              >
+                <button
+                  type="button"
+                  class="btn btn-lg px-4 me-md-2 border-white rounded-0 border-1 text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                  href="#contact-section"
+                  data-bs-toggle="modal"
+                  data-bs-target="#appointmentModal"
+                >
+                  Schedule An Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="mobile-background">
+          <div class="album mt-0 pt-0 d-block d-sm-none rounded-0 border-0">
+            <div class="container py-0">
+              <ul
+                class="nav nav-tabs justify-content-center"
+                id="myTab"
+                role="tablist"
+              >
+                <!-- women -->
+                <li id="fem-mobile-bg" class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active text-white py-1 px-5 border-0"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true"
+                    style="background-color: rgb(251, 143, 177)"
+                  >
+                    Women
+                  </button>
+                </li>
+                <!-- men -->
+                <li id="men-mobile-bg" class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-white py-1 px-5 border-0"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-tab-pane"
+                    aria-selected="false"
+                    style="background-color: rgb(63, 140, 242)"
+                  >
+                    Men
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- SERVICES mobile -->
+    <!-- style="width: 100%; background-color: rgb(172, 166, 163); border-color: rgb(172, 166, 163); -->
+    <section
+      id="mobile-service-women"
+      class="d-block d-sm-none rounded-0 border-0"
+    >
+      <div id="carouselExample" class="carousel">
+        <div class="carousel-inner carousel-women">
+          <div id="tab-click-women" class="carousel-item active">
+            <div
+              class="container px-5 py-5"
+              style="background-color: rgb(251, 143, 177)"
+            >
+              <div class="col mobile-ser">
+                <a href="#" class="text-decoration-none border-0">
+                  <div
+                    class="text-white"
+                    style="background-color: rgb(251, 143, 177)"
+                  >
+                    <img
+                      id="mobile-image"
+                      src="./img/fem-hair-1.png"
+                      class="img-fluid"
+                      width="100%"
+                      height="225"
+                      role="img"
+                    />
+                    <div class="card-body py-2 px-md-1">
+                      <p id="fem-mobile-description" class="card-text">
+                        wash, cut & styling
+                      </p>
+                    </div>
+                    <div class="d-flex"></div>
+                    <div class="card-body py-2">
+                      <p class="mb-0 text-end">
+                        <small id="fem-mobile-price">€ 55 – 95</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="mobile-service-men"
+      class="d-none d-block d-sm-none rounded-0 border-0"
+    >
+      <div id="carouselExampleMen" class="carousel">
+        <div class="carousel-inner carousel-men">
+          <div id="tab-click-men" class="carousel-item">
+            <div
+              class="container px-5 py-5"
+              style="background-color: rgb(63, 140, 242)"
+            >
+              <div class="col mobile-ser">
+                <a href="#" class="text-decoration-none border-0">
+                  <div
+                    class="text-white"
+                    style="background-color: rgb(63, 140, 242)"
+                  >
+                    <img
+                      id="mobile-image-men"
+                      src="./img/m-hair-1.png"
+                      class="img-fluid"
+                      width="100%"
+                      height="225"
+                      role="img"
+                    />
+                    <div class="card-body py-2 px-md-1">
+                      <p id="men-mobile-description" class="card-text">
+                        wash, cut & styling
+                      </p>
+                    </div>
+                    <div class="d-flex"></div>
+                    <div class="card-body py-2">
+                      <p class="mb-0 text-end">
+                        <small id="men-mobile-price">€ 40 – 65</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev carousel-control-prev-men"
+            type="button"
+            data-bs-target="#carouselExampleMen"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next carousel-control-next-men"
+            type="button"
+            data-bs-target="#carouselExampleMen"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services-section" class="d-none d-sm-block">
+      <div class="album" style="background-color: rgb(255, 251, 240)">
+        <div class="container py-2 pb-0">
+          <div
+            class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-5 gx-lg-3 g-sm-3 mx-sm-2 m-0 d-flex justify-content-center"
+          >
+            <div class="col">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://i.pinimg.com/736x/68/e0/5b/68e05b42e61ad55fc1747306d32c9277--studios-stylists.jpg"
+                    class="img-fluid img-ser-1"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2 px-md-1">
+                    <p class="card-text">wash, cut & styling</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 55 – 95</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://i.pinimg.com/736x/a0/dc/8a/a0dc8ab7ee03b9ae408bbd4f0e877c12--retro-ponytail-elegant-ponytail.jpg"
+                    class="img-fluid img-ser-2"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">wash & style</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 30 - 60</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://www.pivotpoint.edu/wp-content/uploads/2020/12/Blunt-Bangs-Hairstyle-Photo-400x400.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Perm</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 70 – 225</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/I/614G4VhPXEL._SS400_.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Color</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 60 – 115</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- second row -->
+        <div class="container pt-0 pb-4">
+          <div
+            class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-5 gx-lg-3 g-sm-3 mx-sm-2 m-0 d-flex justify-content-center"
+          >
+            <div class="col mt-3">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://www.acutabovehair.co.uk/images/smoothme1.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="238"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Hair Smoothing</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 60 – 152</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://www.pivotpoint.edu/wp-content/uploads/2020/12/Sharp-Bob-Hairstyle-Photo-400x400.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Treatment</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 20 – 65</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://i.pinimg.com/736x/24/1b/32/241b327114d41ace526309042d077a7e--over--hairstyles--short-hairstyles.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Brow Thinning</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 10</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://mitchellssalon.com/wp-content/uploads/2021/07/Kris__Wheat_011sqN.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Brow Shaping</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 10 – 15</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cardModal"
+                class="text-decoration-none"
+              >
+                <div
+                  class="card shadow-sm text-white"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <img
+                    src="https://www.hairsay.com/wp-content/uploads/2015/04/b2ap3_thumbnail_safe_image.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    height="225"
+                    role="img"
+                  />
+                  <div class="card-body py-2">
+                    <p class="card-text">Highlights</p>
+                  </div>
+                  <div class="d-flex"></div>
+                  <div class="card-body py-2">
+                    <p class="mb-0 text-end">
+                      <small>€ 75 – 205</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Men's services -->
+        <div id="men-section" style="background-color: rgb(189, 203, 255)">
+          <div class="container pt-2 pb-4">
+            <div
+              class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-5 gx-lg-3 g-sm-3 mx-sm-2 m-0 d-flex justify-content-center"
+            >
+              <div class="col mt-3">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cardModal"
+                  class="text-decoration-none"
+                >
+                  <div
+                    class="card shadow-sm text-white"
+                    style="background-color: rgb(84, 84, 196)"
+                  >
+                    <img
+                      src="https://i.pinimg.com/474x/df/4b/d6/df4bd6ae0f3734f469089d8ecbdb90f6.jpg"
+                      class="img-fluid"
+                      width="100%"
+                      height="225"
+                      role="img"
+                    />
+                    <div class="card-body py-2 px-md-1">
+                      <p class="card-text">Wash, Cut & Styling</p>
+                    </div>
+                    <div class="d-flex"></div>
+                    <div class="card-body py-2">
+                      <p class="mb-0 text-end">
+                        <small>€ 40 – 65</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col mt-3">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cardModal"
+                  class="text-decoration-none"
+                >
+                  <div
+                    class="card shadow-sm text-white"
+                    style="background-color: rgb(84, 84, 196)"
+                  >
+                    <img
+                      src="https://i.pinimg.com/474x/04/6c/12/046c127cd8c3d25a7d1c406c40c6a87f.jpg"
+                      class="img-fluid"
+                      width="100%"
+                      height="225"
+                      role="img"
+                    />
+                    <div class="card-body py-2">
+                      <p class="card-text">Color</p>
+                    </div>
+                    <div class="d-flex"></div>
+                    <div class="card-body py-2">
+                      <p class="mb-0 text-end">
+                        <small>€ 50 – 95</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col mt-3">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cardModal"
+                  class="text-decoration-none"
+                >
+                  <div
+                    class="card shadow-sm text-white"
+                    style="background-color: rgb(84, 84, 196)"
+                  >
+                    <img
+                      src="https://i.pinimg.com/736x/7a/55/75/7a5575dd1a17de8be821a35af6554436--undercut-mohawk-mohawk-hairstyles.jpg"
+                      class="img-fluid"
+                      width="100%"
+                      height="225"
+                      role="img"
+                    />
+                    <div class="card-body py-2">
+                      <p class="card-text">Highlights</p>
+                    </div>
+                    <div class="d-flex"></div>
+                    <div class="card-body py-2">
+                      <p class="mb-0 text-end">
+                        <small>€ 50 – 125</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col mt-3">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cardModal"
+                  class="text-decoration-none"
+                >
+                  <div
+                    class="card shadow-sm text-white"
+                    style="background-color: rgb(84, 84, 196)"
+                  >
+                    <img
+                      src="https://cdn.fashionbeautyrunway.ca/wp-content/uploads/2024/08/Fashion-Beauty-Runway-The-Surprising-Comeback-of-Mens-Perms-How-K-Pop-TikTok-are-Defining-Mens-Hairstyles.webp"
+                      class="img-fluid"
+                      width="100%"
+                      height="225"
+                      role="img"
+                    />
+                    <div class="card-body py-2 py-0">
+                      <p class="card-text">Perm</p>
+                    </div>
+                    <div class="d-flex"></div>
+                    <div class="card-body py-2">
+                      <p class="mb-0 text-end">
+                        <small>€ 60 – 125</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desc-section" style="background-color: rgb(255, 251, 240)">
+      <div class="container col-xxl-10">
+        <div
+          class="row flex-lg-row-reverse align-items-center py-3 py-lg-3 py-sm-auto"
+        >
+          <div class="col-10 col-sm-12 col-lg-5 ps-5 ms-5">
+            <img
+              src="./img/des-1.png"
+              class="d-block mx-lg-1 mx-sm-5 img-fluid rounded-4"
+              alt="Bootstrap Themes"
+              width="80%"
+              height="225"
+              role="img"
+              loading="lazy"
+              style="
+                border-bottom: 10px solid rgb(251, 143, 177);
+                border-right: 10px solid rgb(251, 143, 177);
+              "
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1
+              class="display-3 lh-1 mb-2 text-center mt-2"
+              style="color: rgb(251, 143, 177)"
+            >
+              Discover your hairstyle journey!
+            </h1>
+            <p
+              id="our-hairstyles"
+              class="lead text-center pt-2"
+              style="color: #303030"
+            >
+              Our hairstyles will make you look fresh and lively or bold and
+              wild. And if you want, we can also give you a dreamy or even
+              seductive touch. Together we will find the hairstyle that suits
+              you best in a type and style consultation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desc-section" style="background-color: rgb(251, 143, 177)">
+      <div class="container col-xxl-10">
+        <div class="row flex-lg-row align-items-center py-3 py-lg-3">
+          <div class="col-10 col-sm-12 col-lg-5 text-center ps-5 ms-5">
+            <img
+              src="https://thumbs.dreamstime.com/b/black-shop-front-mockup-small-store-facade-template-branding-business-presentation-view-big-window-european-street-346236768.jpg"
+              class="d-block mx-lg-1 img-fluid rounded-4"
+              alt="Bootstrap Themes"
+              width="70%"
+              height="225"
+              role="img"
+              loading="lazy"
+              style="
+                border-bottom: 10px solid rgb(255, 251, 240);
+                border-left: 10px solid rgb(255, 251, 240);
+              "
+            />
+          </div>
+          <div class="col-lg-5 col-sm-12">
+            <h1
+              class="display-3 lh-1 mb-2 text-center ms-4 mt-2"
+              style="color: rgb(255, 251, 240); width: 80%"
+            >
+              Extensions with gentle techniques!
+            </h1>
+            <p class="lead text-center pt-2" style="color: rgb(255, 251, 240)">
+              We are happy to fulfill the dream of endlessly long and full hair
+              with hair extensions and hair thickening. With ultrasound, laser
+              beamer and air pressure, we offer the best and most gentle
+              methods.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact-section"
+      class="pt-3 pb-5"
+      style="background-image: url('./img/map-bg.png')"
+    >
+      <div class="container col-xxl-10">
+        <div
+          class="row flex-lg-row-reverse align-items-center py-lg-3 py-sm-auto"
+        >
+          <div class="col-10 col-sm-12 col-lg-5 mx-5 text-center ms-5">
+            <a
+              href="https://maps.google.com"
+              target="_blank"
+              ><img
+                src="./img/map2.png"
+                class="d-block mb-3 img-fluid rounded-4"
+                alt="Bootstrap Themes"
+                width="80%"
+                height="225"
+                role="img"
+                loading="lazy"
+                style="
+                  border-bottom: 10px solid rgb(84, 84, 196);
+                  border-right: 10px solid rgb(84, 84, 196);
+                "
+            /></a>
+          </div>
+          <div id="contact-info" class="col-lg-5">
+            <h1 class="lh-1 mb-3 text-center;">Find Us on Google Maps</h1>
+            <p class="lead text-center pt-2" style="color: #303030">
+              location: on earth
+            </p>
+            <p class="lead text-center pt-2" style="color: #303030">
+              phone: 123456780
+            </p>
+            <p class="lead text-center pt-2" style="color: #303030">
+              Facebook group
+            </p>
+          </div>
+        </div>
+        <div class="container col-12 px-0 pt-1 pb-4 d-block d-sm-none">
+          <form
+            class="col-12 border border-2 rounded-0 pt-0 pb-1 px-2 mt-0"
+            style="
+              background-color: rgb(152, 168, 217);
+              border-color: rgb(63, 140, 242) !important;
+              padding-right: 50px;
+            "
+          >
+            <p class="pt-1 mb-0 text-white">Email</p>
+            <div class="form-floating mb-2">
+              <input
+                type="email"
+                class="form-control rounded-0"
+                id="floatingInput"
+                placeholder="Email: name@example.com"
+              />
+              <label for="floatingInput"
+                ><small style="color: #a6a6a6"
+                  >Email: name@example.com</small
+                ></label
+              >
+            </div>
+            <p class="pt-0 mb-0 text-white">Confirm</p>
+            <div class="form-floating mb-2">
+              <input
+                type="email"
+                class="form-control rounded-0"
+                id="floatingInput"
+                placeholder="Re-Type: name@example.com"
+              />
+              <label for="floatingInput"
+                ><small style="color: #a6a6a6"
+                  >Re-Type name@example.com</small
+                ></label
+              >
+            </div>
+            <p class="pt-0 mb-0 text-white">Comments</p>
+            <div class="form-floating mb-2">
+              <textarea
+                class="form-control rounded-0"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+                style="resize: none"
+              ></textarea>
+              <label for="floatingTextarea"
+                ><small style="color: #a6a6a6">I would like </small></label
+              >
+            </div>
+            <button
+              class="send w-100 btn btn-lg mb-3 rounded-0 text-white py-0"
+              type="submit"
+              style="background-color: rgb(251, 143, 177)"
+            >
+              <small>Send</small>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer-section" class="fixed-bottom">
+      <div class="py-0 col-sm-12">
+        <div
+          class="container-fluid py-2 d-flex justify-content-lg-end text-center justify-content-center py-3"
+          style="background-color: rgb(251, 143, 177)"
+        >
+          <ul class="nav me-lg-12 d-flex justify-content-center">
+            <li class="ms-2">
+              <a
+                class="text-body-secondary"
+                href="https://www.twitter.com"
+                target="”_blank”"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+                <use xlink:href="#twitter"></use
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.instagram.com"
+                target="”_blank”"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+                <use xlink:href="#instagram"></use
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.facebook.com"
+                target="”_blank”"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+                <use xlink:href="#facebook"></use
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <section>
+      <div
+        class="modal fade"
+        id="appointmentModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #747474">
+              <h1
+                class="modal-title fs-5"
+                id="exampleModalLabel"
+                style="color: #ffffff"
+              >
+                Schedule an Appointment
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" style="background-color: #747474">
+              <form
+                class="col-sm-12 border border-2 rounded-0 pt-0 pb-1 px-2 mt-0"
+                style="
+                  background-color: rgb(152, 168, 217);
+                  border-color: rgb(63, 140, 242) !important;
+                  padding-right: 50px;
+                "
+              >
+                <p class="pt-1 mb-0 text-white">Email</p>
+                <div class="form-floating mb-2">
+                  <input
+                    type="email"
+                    class="form-control rounded-0"
+                    id="floatingInput"
+                    placeholder="Email: name@example.com"
+                  />
+                  <label for="floatingInput"
+                    ><small style="color: #a6a6a6"
+                      >Email: name@example.com</small
+                    ></label
+                  >
+                </div>
+                <p class="pt-0 mb-0 text-white">Confirm</p>
+                <div class="form-floating mb-2">
+                  <input
+                    type="email"
+                    class="form-control rounded-0"
+                    id="floatingInput"
+                    placeholder="Re-Type: name@example.com"
+                  />
+                  <label for="floatingInput"
+                    ><small style="color: #a6a6a6"
+                      >Re-Type name@example.com</small
+                    ></label
+                  >
+                </div>
+                <p class="pt-0 mb-0 text-white">Comments</p>
+                <div class="form-floating mb-2">
+                  <textarea
+                    class="form-control rounded-0"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                    style="resize: none"
+                  ></textarea>
+                  <label for="floatingTextarea"
+                    ><small style="color: #a6a6a6">I would like </small></label
+                  >
+                </div>
+                <button
+                  class="send w-100 btn btn-lg mb-3 rounded-0 text-white py-0"
+                  type="submit"
+                  style="background-color: rgb(251, 143, 177)"
+                >
+                  <small>Send</small>
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer" style="background-color: #747474">
+              <button
+                type="button"
+                class="btn"
+                style="background-color: rgb(251, 143, 177)"
+              >
+                Send
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                style="background-color: #ffffff; color: #303030"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <section>
+      <div
+        class="modal fade modal-lg"
+        id="cardModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content my-1">
+            <div
+              class="modal-header main-color"
+              style="background-color: rgb(251, 143, 177)"
+            >
+              <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">
+                wash, cut & styling
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="container modal-body secondary-color my-1"
+              style="background-color: #ffffff"
+            >
+              <div
+                class="container col-xxl-8 px-5 pb-2 d-block ml-5 text-center"
+              >
+                <div class="row flex-lg-row align-items-center g-5 g-sm-1 py-2">
+                  <div class="col-12 col-sm-12 col-lg-5 mr-4">
+                    <img
+                      src="https://i.pinimg.com/736x/68/e0/5b/68e05b42e61ad55fc1747306d32c9277--studios-stylists.jpg"
+                      class="mx-lg-auto my-0 img-fluid"
+                      alt="Bootstrap Themes"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-lg-6 my-0">
+                    <p class="lead" style="color: #303030 !important">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Expedita officia ipsa, blanditiis excepturi vero quisquam.
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer m-0">
+                  <button
+                    type="button"
+                    class="btn text-white"
+                    data-bs-dismiss="modal"
+                    style="background-color: rgb(251, 143, 177)"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      //Navbar Toggler Monitor
+      $('#navbarToggler').on('show.bs.collapse', function () {
+        $('a.nav-link').click(function () {
+          console.log('clicked link to collapse')
+          $('#navbarToggler').collapse('hide')
+        })
+      })
+    </script>
+  </body>
+</html>
